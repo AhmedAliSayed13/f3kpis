@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <style>
+    #single{
+      margin-top: -11px;
+          /* width: 100%; */
+    }
+    .home-page .select-menu select {
+    border: 1px solid #aaaaaa;
+    color: #444444;
+    font: inherit;
+}
+.select2-container .select2-selection--single {
+    height: 50px;
+}
+.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow {
+
+    top: 13px;
+}
+    </style>
+<body>
+
+    <repeat group="{{ @kpis }}" value="{{ @kpi }}"   >
+    </repeat>
+    <repeat group="{{ @category }}" value="{{ @category }}"   >
+    </repeat>
+
+       <div class="form-group select-menu">
+        <select id="single" class="js-states " onchange="location = this.value;" >
+           <option value="">
+            اختر المؤشر المطلوب
+            </option>
+           <repeat group="{{ @kpis }}" value="{{ @kpi }}"   >
+             <option value="/wkpis/details/{{ trim(@kpi.kpi_id) }}">
+                {{ trim(@kpi.kpi_title) }}
+             </option>
+          </repeat>
+        </select>
+      </div>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <!-- Select2 -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+ <script type="text/javascript">
+
+ //select 2
+   $(document).ready(function() {
+       $('#single').select2();
+
+   });
+
+ </script>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <include href="/layouts/header.html" />
+    <link rel="stylesheet" href="{{@BASE}}/css/theme.default.min.css">
+    <link href="{{@BASE}}/ui/css/ahmed-style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div class="page-6">
+
+    <include href="/layouts/nav.html" />
+<div class="profile-page">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12 text-right mr-4">
+                    <div class="page-data-content">
+                        <h3 class="page-title">
+                            <a class="page-title" href="/wkpis/home">الرئيسية</a>/
+                            <a class="page-title" href="/admin/list/users">المستخدمين</a>/
+
+                        </h3>
+
+                    </div>
+                    <h3 class="page-title">تعديل بيانات مستخدم </h3>
+                    <div class="under-line"></div>
+                </div>
+
+            </div>
+        </div>
+
+    <div class="container-fluid" id="edit-user-container">
+        <div class="row mt-5">
+            <div class="col-lg-12  mt-1">
+                <form action="/admin/edit/user/save" method="post">
+                    <input type="hidden" name="token" value="{{ @CSRF }}">
+                    <input name="user_id" value="{{@edit_user[0]['usr_id']}}" type="hidden">
+                    <div class=" col-sm-12 text-right">
+                        <div class=" form-group">
+                            <label  >اسم المستخدم</label>
+                            <h1  class="form-control-plaintext" id="staticEmail" >{{@edit_user[0]['usr_name']}}</h1>
+                        </div>
+                    </div>
+                    <div class="col-12 text-right">
+                        <div class="form-group form-check">
+                            <label>
+                                <input class="form-check-input"   {{@$edit_user[0]['priv_admin']=='Y'? 'checked':'' }} name="priv_admin" value="Y" type="checkbox" id="priv_admin"> كـ مدير
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="row " id="user-privileges" {{@$edit_user[0]['priv_admin']=='Y'? "style='display:none'":'' }} >
+
+
+                    <div class="col-12 float-right text-right">
+                        <div class="col-12">
+                            <label class="label-check-head">مؤشرات الأداء</label>
+                        </div>
+                        <div class="col-6 mt-2 text-center float-right ">
+                            <div class="form-group ">
+                                <label >
+                                    <input  id="kpis_kpis_check_all" name="kpis_kpis_option_radio" value="1" type="radio">     تحديد الكل
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-2 float-right text-center">
+                            <div class="form-group ">
+                                <label >
+                                    <input class="-input" id="kpis_kpis_uncheck_all" name="kpis_kpis_option_radio" value="0"  type="radio"> الغاء التحديد
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group text-right">
+
+                            <select id="kpis_kpis" name="kpis_kpis[]"  class="form-control selected-options" multiple='multiple'>
+                                <repeat group="{{ @kpis_kpis }}" value="{{ @kpis_id_item }}">
+                                    <option class="kpis_kpis" value="{{@kpis_id_item.kpi_id}}"  {{in_array(@kpis_id_item.kpi_id,@user_kpis_ids)==1?'selected':'' }}>{{@kpis_id_item.kpi_title}}</option>
+                                </repeat>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-12 text-right float-right">
+                        <div class="col-12">
+                            <label class="label-check-head">التنبؤ</label>
+                        </div>
+                        <div class="col-6 mt-2 text-center float-right">
+                            <div class="form-group ">
+                                <label >
+                                    <input  id="projections_prjs_check_all" name="projections_prjs_option_radio" value="1" type="radio"> تحديد الكل
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-2 text-center float-right">
+                            <div class="form-group ">
+                                <label >
+                                    <input  id="projections_prjs_uncheck_all" name="projections_prjs_option_radio" value="0"  type="radio"> الغاء التحديد
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select name="projections_prjs[]" id="projections_prjs" class="form-control  selected-options" multiple='multiple'>
+                                <repeat group="{{ @projections_prjs }}" value="{{ @projections_prj_item }}">
+                                    <option value="{{@projections_prj_item.prj_id}}" class="projections_prjs" {{in_array(@projections_prj_item.prj_id,@user_projections_ids)==1?'selected':'' }}>{{@projections_prj_item.prj_title}}</option>
+                                </repeat>
+                            </select>
+                        </div>
+
+
+                    </div>
+                    <div class="col-12 text-right float-right">
+                        <div class="col-12">
+                            <label class="label-check-head">مؤشرات البحث و الأسترجاع</label>
+                        </div>
+                        <div class="col-6 mt-2 float-right text-center">
+                            <div class="form-group ">
+                                <label >
+                                    <input  id="reports_ids_check_all" name="reports_ids_option_radio" value="1" type="radio"> تحديد الكل
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-2 float-right text-center">
+                            <div class="form-group">
+                                <label >
+                                    <input  id="reports_ids_uncheck_all" name="reports_ids_option_radio" value="0"  type="radio"> الغاء التحديد
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <select id="reports_reps" name="reports_ids[]"  class="form-control selected-options" multiple='multiple'>
+                                <repeat group="{{ @reports_reps }}" value="{{ @reports_id_item }}">
+                                    <option class="kpis_kpis" {{in_array(@reports_id_item.rep_id,@user_reports_ids)==1?'selected':'' }} value="{{@reports_id_item.rep_id}}">{{@reports_id_item.rep_title}}</option>
+                                </repeat>
+                            </select>
+                        </div>
+
+                    </div>
+            </div>
+            <div class="form-group text-center row">
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-primary">حفظ</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</div>
+<include href="/layouts/footer.html" />
+    <script src="{{@BASE}}/ui/js/app_proj.js"></script>
+</div>
+</body>
+</html>

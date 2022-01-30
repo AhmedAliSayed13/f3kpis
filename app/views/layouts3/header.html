@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <base href="{{ @BASE.'/'.@UI }}" />
+    <title>{{ @site }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وزارة التعليم</title>
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>-->
+<!--    <link rel="stylesheet" href="{{@BASE}}/ui2/css/app.css"/>-->
+
+<!--    <script src="https://use.fontawesome.com/4ecc3dbb0b.js"></script>-->
+<!--    <link  href="{{@BASE}}/ui2/css/all.min.css">-->
+
+
+<!--    <link rel="stylesheet" type="text/css" href="{{@BASE}}/ui2/css/multi-select.css">-->
+    <link rel="stylesheet" href="{{@BASE}}/css/theme.default.min.css">
+    <link href="{{@BASE}}/ui2/css/ahmed-style.css" type="text/css" rel="stylesheet" />
+
+    <!--    <link href="{{@BASE}}/ui2/css/bootstrap-datetimepicker.css?v2" rel="stylesheet" />-->
+    <!--    <script type="text/javascript" src="{{@BASE}}/js/themes/fusioncharts.theme.ocean.js"></script>-->
+    <!--    <script type="text/javascript" src="{{@BASE}}/js/fusioncharts.js"></script>-->
+
+<!--    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>-->
+<!--    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>-->
+
+
+<!--    <script src="{{@BASE}}/ui2/js/jquery-3.3.1.slim.min.js"></script>-->
+<!--    <script src="{{@BASE}}/ui2/js/tableHTMLExport.js"></script>-->
+<!--    <link rel="stylesheet" href="{{@BASE}}/ui2/css/vanillatop.min.css">-->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+    <!-- load jQuery and tablesorter scripts -->
+
+<!--    <link rel="stylesheet" href="{{@BASE}}/ui2/css/theme.default.min.css">-->
+<!--    <link rel="stylesheet" href="{{@BASE}}/ui2/css/theme.blue.css">-->
+
+
+<!--    <script type="text/javascript" src="{{@BASE}}/ui2/js/jquery.tablesorter.js"></script>-->
+
+<!--    &lt;!&ndash; tablesorter widgets (optional) &ndash;&gt;-->
+<!--    <script type="text/javascript" src="{{@BASE}}/ui2/js/jquery.tablesorter.widgets.js"></script>-->
+</head>
+<body>
+<div class="page-6">
+
+    <header class="header">
+        <nav class="container-flui2d">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 col-5">
+                    <button id="right-menu-button"><i class="fas fa-bars"></i></button>
+                    <div id="right-menu">
+                        <ul id="list-option" class="list-inline">
+                            <li class="list-inline-item"><a id="profile-icon"><img src="{{@BASE}}/ui2/images/icons/user-icon.png" alt="profile-icon"/></a></li>
+                            <li class="list-inline-item header-items"><a href="/wkpis/kpi"><img src="{{@BASE}}/ui2/images/icons/website-1.svg" alt=""/><span>مؤشرات الأداء</span></a></li>
+                            <li class="list-inline-item header-items"><a href="/projections/show/group"><img src="{{@BASE}}/ui2/images/icons/analytics-1.svg" alt=""/><span>الاستنباط</span></a></li>
+                            <li class="list-inline-item header-items"><a href="/report/list"><img src="{{@BASE}}/ui2/images/icons/magnifier-1.svg" alt=""/><span>مؤشرات البحث و الأسترجاع</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-7">
+                    <div class="logo-box"><a ><img id="list-option" src="{{@BASE}}/ui2/images/logo.png" alt=""/></a></div>
+                </div>
+            </div>
+        </nav>
+        <div id="profile-menu">
+            <div class="arrow"></div>
+            <ul class="list-inline">
+                <li><a href="/user/edit/account"><img src="{{@BASE}}/ui2/images/icons/user.svg" alt=""/>بيانات المستخدم</a></li>
+                <li><a href="/user/change/password"><img src="{{@BASE}}/ui2/images/icons/lock.svg" alt=""/>تغيير كلمه المرور</a></li>
+                <check if="{{ @SESSION.user[0]['priv_admin']=='Y' }}">
+                    <true>
+                <li><a href="/admin/list/users"><img src="{{@BASE}}/ui2/images/icons/lock.svg" alt=""/>المستخدمين</a></li>
+                    </true>
+                </check>
+                <li><a href="/logout"><img src="{{@BASE}}/ui2/images/icons/logout.svg" alt=""/>تسجيل خروج</a></li>
+            </ul>
+        </div>
+    </header>
+

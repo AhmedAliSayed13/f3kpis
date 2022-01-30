@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <include href="/layouts/header.html" />
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <!-- Custom styles for this template -->
+    <link href="../../ui/css/simple-sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../ui/css/multi-select.css">
+    <link  href="../../ui/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<style>
+
+/* #myInput{
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+}
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 600px;
+    text-align: right;
+}
+nav{
+  margin: auto;
+} */
+
+</style>
+<body>
+  <include href="/layouts/nav.html" />
+
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+
+    <div class="col-md-3 sidebar " >
+
+    <nav class="nnav nav-pills-custom">
+      <input type="text" id="myInput" onkeyup="myFunction()"  placeholder="ابحث عن....">
+
+
+        <ul id = "myUL">
+          <!-- <li>Mango</li>
+  <li>Apple</li>
+  <li>Grape</li>
+  <li>Cherry</li> -->
+          <li>
+            <a href="#11"><i class="fa fa-user-circle-o mr-2"></i> إجمالي عدداملشروعات باملناطق
+             </a>
+           </li>
+           <li>
+             <a href="#11"><i class="fa fa-user-circle-o mr-2"></i>  نسبة كل منطقة من إجمالي عدد
+   املشروعات
+              </a>
+            </li>
+
+
+       </ul>
+   </nav>
+
+   </div>
+
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <repeat group="{{ @kpis }}" value="{{ @kpi }}">
+                        <div class="col-4 float-left mt-2 ">
+                            <div class="card w-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ trim(@kpi.kpi_id) }}  {{ trim(@kpi.kpi_title) }}</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a class="btn btn-info" href="/wkpis/details/{{ trim(@kpi.kpi_id) }}"><i class="fas fa-info-circle">  </i>تفاصيل </a>
+                                    <a class="btn btn-primary " href="/wkpis/updateform/{{ trim(@kpi.kpi_id) }}"> <i class="fas fa-edit"></i> تحديث </a>
+                                </div>
+                            </div>
+                        </div>
+                    </repeat>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<!-- Bootstrap JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<!-- <script src="../../ui/js/all.min.js"></script> -->
+<!-- <script src="../../ui/js/jquery.multi-select.js"></script> -->
+
+<!-- Bootstrap core JavaScript -->
+<!--<script src="../../ui/js/jquery.min.js"></script>-->
+<script src="../../ui/js/bootstrap.bundle.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    // $("#menu-toggle").click(function(e) {
+    //     e.preventDefault();
+    //     $("#wrapper").toggleClass("toggled");
+    // });
+</script>
+
+<script>
+////  filter search
+function myFunction() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName("li");
+  if(input.value.length == 0){
+      ////////////
+         ul.style.display = "none";
+         return;
+     }else{
+         ul.style.display = "block";
+     }
+     //////////////
+  for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue == '') {
+          $("#myUL li").hide()
+        }
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+      } else {
+          li[i].style.display = "none";
+      }
+  }
+}
+
+$(document).ready(function() {
+  $("#myUL li").hide();
+});
+
+
+
+</script>
+<include href="/layouts/footer.html" />
+
+</body>
+
+</html>

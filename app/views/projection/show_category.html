@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <include href="/layouts/header.html" />
+    <!-- <link rel="stylesheet" href="{{@BASE}}/css/theme.default.min.css"> -->
+    <link href="{{@BASE}}/ui/css/ahmed-style.css" type="text/css" rel="stylesheet" />
+</head>
+<body >
+<div class="page-6 ">
+
+    <include href="/layouts/nav.html" />
+<div class="page-5 ">
+    <div class="page-content pb-2 ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-right">
+                    <h3 class="page-title">
+                        <a class="page-title" href="/wkpis/home">الرئيسية</a>/
+                        <a class="page-title" href="/projections/show/group">التنبؤ</a>/
+                    </h3>
+                    <h3 class="page-title">{{@title}} </h3>
+                    <div class="under-line"></div>
+                </div>
+                <div class="col-12 into-div-head ">
+                    {{@description | raw}}
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="tab-content pro-collapse-div" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-0" role="tabpanel" aria-labelledby="pills-0-tab">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <check if="{{ @type==1 }}">
+                                <true>
+                                    <loop from="{{ @i=0 }}" to="{{ @i < count(@projection_roots) }}" step="{{ @i++ }}">
+                                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
+                                            <div class="card">
+                                                <div class="card-header ">
+                                                    <h3>{{ @projection_roots[@i]['prj_title']}}  </h3>
+                                                    <button class="toggle-body-button">
+                                                        <check if="{{ @id_tap == (@i+1) }}">
+                                                            <true>
+                                                                <i class="fas fa-minus"></i>
+                                                            </true>
+                                                            <false>
+                                                                <i class="fas fa-plus"></i>
+                                                            </false>
+                                                        </check>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body item-collapse {{ @id_tap == (@i+1) ? '' : 'd-block' }}  ">
+                                                    <ul class="list-unstyled">
+                                                        <loop from="{{ @x=0 }}" to="{{ @x < count(@projections_sub) }}" step="{{ @x++ }}">
+                                                            <check if="{{@projections_sub[@x]['prj_id']}}!=42">
+                                                                <check if="{{ @projections_sub[@x]['prj_root_id']==@projection_roots[@i]['prj_id'] }}">
+                                                                    <li><a href="/projections/details/{{@projections_sub[@x]['prj_id']}}"><img src="/ui/images/icons/analytics-11.svg" alt=""><span>{{@projections_sub[@x]['prj_title']}}</span></a></li>
+                                                                </check>
+                                                            </check>
+                                                        </loop>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </loop>
+                                </true>
+                            </check>
+                            <check if="{{ @type==2  }}">
+                                <true>
+                                    <loop from="{{ @i=0 }}" to="{{ @i < count(@projection_roots) }}" step="{{ @i++ }}">
+                                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h3>{{ @projection_roots[@i]['prj_title']}} </h3>
+                                                    <button class="toggle-body-button">
+                                                        <check if="{{ @id_tap == (@i+1) }}">
+                                                            <true>
+                                                                <i class="fas fa-minus"></i>
+                                                            </true>
+                                                            <false>
+                                                                <i class="fas fa-plus"></i>
+                                                            </false>
+                                                        </check>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body item-collapse {{ @id_tap == (@i+1) ? '' : 'd-block' }}">
+                                                    <ul class="list-unstyled">
+                                                        <loop from="{{ @x=0 }}" to="{{ @x < count(@projections_sub) }}" step="{{ @x++ }}">
+                                                            <check if="{{ @projections_sub[@x]['prj_root_id']==@projection_roots[@i]['prj_id'] }}">
+                                                                <li><a href="/projections/details/{{@projections_sub[@x]['prj_id']}}"><img src="/ui/images/icons/analytics-11.svg" alt=""><span>{{@projections_sub[@x]['prj_title']}}</span></a></li>
+                                                            </check>
+                                                        </loop>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </loop>
+                                </true>
+                            </check>
+                            <check if="{{ @type==3 }}">
+                                <true>
+                                    <loop from="{{ @i=0 }}" to="{{ @i < count(@projection_roots) }}" step="{{ @i++ }}">
+                                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h3>{{ @projection_roots[@i]['prj_title']}} </h3>
+                                                    <button class="toggle-body-button">
+                                                        <check if="{{ @id_tap == (@i+1) }}">
+                                                            <true>
+                                                                <i class="fas fa-minus"></i>
+                                                            </true>
+                                                            <false>
+                                                                <i class="fas fa-plus"></i>
+                                                            </false>
+                                                        </check>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body item-collapse {{ @id_tap == (@i+1) ? '' : 'd-block' }}">
+                                                    <ul class="list-unstyled">
+                                                        <loop from="{{ @x=0 }}" to="{{ @x < count(@projections_sub) }}" step="{{ @x++ }}">
+                                                            <check if="@projections_sub[@x]['prj_id']==44 or @projections_sub[@x]['prj_id']==46">
+                                                                <check if="{{ @projections_sub[@x]['prj_root_id']==@projection_roots[@i]['prj_id'] }}   ">
+                                                                    <li><a href="#" data-toggle="modal" data-target="#proj{{@projections_sub[@x]['prj_id']}}Modal" ><img src="/ui/images/icons/analytics-11.svg" alt="">{{@projections_sub[@x]['prj_title']}}</span></a></li>
+                                                                </check>
+                                                            </check>
+                                                        </loop>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </loop>
+                                </true>
+                            </check>
+                            <check if="{{ @type==4 }}">
+                                <true>
+                                    <loop from="{{ @i=0 }}" to="{{ @i < count(@projection_roots) }}" step="{{ @i++ }}">
+                                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h3>{{ @projection_roots[@i]['prj_title']}} </h3>
+                                                    <button class="toggle-body-button">
+                                                        <check if="{{ @id_tap == (@i+1) }}">
+                                                            <true>
+                                                                <i class="fas fa-minus"></i>
+                                                            </true>
+                                                            <false>
+                                                                <i class="fas fa-plus"></i>
+                                                            </false>
+                                                        </check>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body item-collapse {{ @id_tap == (@i+1) ? '' : 'd-block' }}">
+                                                    <ul class="list-unstyled">
+                                                        <loop from="{{ @x=0 }}" to="{{ @x < count(@projections_sub) }}" step="{{ @x++ }}">
+                                                            <check if="@projections_sub[@x]['prj_id']!=41">
+                                                                <check if="{{ @projections_sub[@x]['prj_root_id']==@projection_roots[@i]['prj_id'] }}">
+                                                                    <li><a href="/projections/details/{{@projections_sub[@x]['prj_id']}}"><img src="/ui/images/icons/analytics-11.svg" alt="">{{@projections_sub[@x]['prj_title']}}</span></a></li>
+                                                                </check>
+                                                            </check>
+                                                        </loop>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </loop>
+                                </true>
+                            </check>
+                            <check if="{{ @type==5 }}">
+                                    <loop from="{{ @i=0 }}" to="{{ @i < count(@projection_roots) }}" step="{{ @i++ }}">
+                                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h3>{{ @projection_roots[@i]['prj_title']}} </h3>
+                                                    <button class="toggle-body-button">
+                                                        <check if="{{ @id_tap == (@i+1) }}">
+                                                            <true>
+                                                                <i class="fas fa-minus"></i>
+                                                            </true>
+                                                            <false>
+                                                                <i class="fas fa-plus"></i>
+                                                            </false>
+                                                        </check>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body item-collapse {{ @id_tap == (@i+1) ? '' : 'd-block' }}">
+                                                    <ul class="list-unstyled">
+                                                        <loop from="{{ @x=0 }}" to="{{ @x < count(@projections_sub) }}" step="{{ @x++ }}">
+                                                            <check if="{{ @projections_sub[@x]['prj_id']==37 }}">
+                                                                <true>
+                                                                    <li><a href="#" data-toggle="modal" data-target="#proj37Modal"><img src="/ui/images/icons/analytics-11.svg" alt=""><span>{{@projections_sub[@x]['prj_title']}}</span></a></li>
+                                                                </true>
+                                                                <false>
+                                                                    <check if="{{ @projections_sub[@x]['prj_id']!=39 }}">
+                                                                        <li><a href="/projections/details/{{@projections_sub[@x]['prj_id']}}"><img src="/ui/images/icons/analytics-11.svg" alt=""><span>{{@projections_sub[@x]['prj_title']}}</span></a></li>
+                                                                    </check>
+                                                                </false>
+                                                            </check>
+                                                        </loop>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </loop>
+                            </check>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="proj37Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title">اختار المقاول لعرض بياناته</h5>
+            </div>
+            <form method="post" action="/projections/details/37">
+                <div class="modal-body text-right">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <select class="  js-example-basic-single "  name="contractor_id" required>
+                                    <repeat group="{{ @contractors }}" key="{{ @ikey }}" value="{{ @contractor }}">
+                                        <option value="{{@contractor['cont_id']}}">{{@contractor['cont_name']}}</option>
+                                    </repeat>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-left">
+                    <button   class=" btn btn-primary p-2 m-2"  type="submit">عرض</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="proj44Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title">اختار منطقة ليتم التنبؤ خلالها </h5>
+            </div>
+
+            <form method="post" action="/projections/details/44">
+                <div class="modal-body text-right">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label class="text" >التكلفة بالمليون </label>
+                                <input type="text" class="form-control pop-textbox" name="cost" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-left">
+                    <button   class=" btn btn-primary p-2 m-2"  type="submit">عرض</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="proj46Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title"> ادخل البيانات ليتم التنبؤ بتكلفة المشروع</h5>
+            </div>
+
+            <form method="post" action="/projections/details/46">
+                <div class="modal-body text-right">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label class="text" >المدة بالايام</label>
+                                <input type="number" class="form-control" value="1" name="time" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-left">
+                    <button   class=" btn btn-primary p-2 m-2"  type="submit">عرض</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<include href="/layouts/footer.html" />
+<script src="{{@BASE}}/ui/js/app_proj.js"></script>
+</div>
+</body>
+</html>

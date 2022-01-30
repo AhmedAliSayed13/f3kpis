@@ -1,0 +1,33 @@
+
+<include href="header.html" />
+<section class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <repeat group="{{ @projections }}" value="{{ @projection }}">
+                    <div class="col-4 float-left mt-2 ">
+                        <div class="card w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ trim(@projection.prj_id) }} {{ trim(@projection.prj_title) }}</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a class="btn btn-info" href="/projections/details/{{ trim(@projection.prj_id) }}"><i class="fas fa-info-circle"></i></a>
+                                <a class="btn btn-primary " href="/projections/updateform/{{ trim(@projection.prj_id) }}"> <i class="fas fa-edit"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </repeat>
+            </div>
+        </div>
+    </div>
+</section>
+<include href="footer.html" />
+
+
+
+
+
+
+
+
+
+
