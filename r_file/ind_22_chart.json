@@ -1,0 +1,13 @@
+{
+  "chart": {
+    "caption": "نصيب المقاول من إجمالي عدد مشاريع الوزارة",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "المقاول",
+    "yAxisName": "عدد المشاريع",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "head": ["عدد المشاريع", "نسبة المشاريع"]
+}

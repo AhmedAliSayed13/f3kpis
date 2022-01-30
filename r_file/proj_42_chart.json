@@ -1,0 +1,14 @@
+{
+  "chart": {
+    "caption": "تقسيم المقاولين الي مجموعات باستخدام خوارزمية التجميع",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "المقاول",
+    "yAxisName": "عدد",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "head": ["عدد المشاريع", "اجمالي تكلفة المشاريع (بالمليون ريال)", "المجموعة"],
+  "head2": ["المجموعة الدنيا", "المجموعة المتوسطة", "المجموعة العليا"]
+}

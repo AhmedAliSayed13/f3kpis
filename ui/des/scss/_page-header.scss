@@ -1,0 +1,54 @@
+nav.page-header {
+    // padding: 25px;
+    padding: 25px 50px 0px;
+    img {
+        height: 132px;
+    }
+    .right-bookmark {
+        height: 157px;
+        display: inline-block;
+        background-color: #0C8575;
+        padding: 5px;
+        color: #fff;
+        position: relative;
+        top: -100px;
+        margin-left: 33px;
+        width: 40px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        p {
+            position: relative;
+            top: 65%;
+            right: 7px;
+            font-size: 33px;
+            font-weight: bolder;
+        }
+    }
+    .page-data-content {
+        display: inline-block;
+        h3 {
+            font: var(--unnamed-font-style-normal) normal 900 39px/73px Cairo;
+            // text-align: left;
+            font: normal normal 900 39px/73px Cairo;
+            letter-spacing: 0px;
+            color: #272D3B;
+            opacity: 1;
+        }
+        p {
+            font: var(--unnamed-font-style-normal) normal bold 24px/45px Cairo;
+            // text-align: center;
+            font: normal normal bold 24px/45px Cairo;
+            letter-spacing: 0px;
+            opacity: 1;
+            span {
+                color: #0C8575;
+            }
+        }
+    }
+    .hr {
+        height: 2px;
+        background: #000000 0% 0% no-repeat padding-box;
+        width: 100%;
+        margin-top: -50px;
+    }
+}

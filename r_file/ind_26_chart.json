@@ -1,0 +1,13 @@
+{
+  "chart": {
+    "caption": "نسبة المناطق من إجمالي قيمة عقود مشاريع الوزارة",
+    "subCaption": "الوحدة = مليار ريال",
+    "xAxisName": "المنطقة",
+    "yAxisName": "قيمة المشاريع بالمليار ريال",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "head": ["قيمة المشاريع", "نسبة المشاريع"]
+}

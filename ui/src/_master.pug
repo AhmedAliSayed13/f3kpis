@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="ar" dir="rtl")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+
+        block variables
+            -var logoPath="../images/logo.png"
+            -var showAllMenu = true
+         
+        title #{pageTitle}
+
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css")
+        link(rel="stylesheet", href="../css/app.css")
+    body
+        div(class=pageName)
+            block content
+
+    script(src="../js/jquery-3.3.1.slim.min.js")
+    script(src="../js/popper.min.js")
+    script(src="../js/bootstrap.min.js")
+    script(src="../js/owl.carousel.min.js")
+    script(src="../js/app.js")

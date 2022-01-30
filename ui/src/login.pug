@@ -1,0 +1,31 @@
+extends _master
+
+append variables
+    -var pageTitle = "تسجيل الدخول"
+    -var pageName = "login-page"
+
+block content
+    .container-row: .row
+        .col-lg-4.col-sm-12.left-side: .logo-box: img(src=logoPath, alt="Logo")
+        
+        .col-lg-6.col-sm-12.right-side
+            h3 لوحة القادة لمؤشرات أداء مشاريع وكالة المشاريع و الصيانة
+
+            h4 مرحبا بك
+
+            form(action="./welcome.html")
+            
+                .form-group
+                    label(for="name") اسم المستخدم
+                    input(type="text" class="form-control" id="name")
+
+                .form-group
+                    label(for="password") كلمه السر
+                    input(type="password" class="form-control" id="password")
+            
+                .form-group
+                    button(class="btn btn-primary" type="submit") دخول
+
+
+
+

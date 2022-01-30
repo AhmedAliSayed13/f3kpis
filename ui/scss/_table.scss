@@ -1,0 +1,35 @@
+table {
+    padding: 0px 50px;
+    border-collapse: separate;
+    border-spacing: 6px;
+    th {
+        padding: 1.5rem!important;
+    }
+    td {
+        padding: 1.75rem!important;
+    }
+    td,
+    th {
+        font-weight: normal;
+        border-top: none!important;
+        border-radius: 4px;
+        font-size: 22px;
+        text-align: center;
+    }
+    thead {
+        th {
+            color: #FFFFFF;
+            background-color: #0C8575;
+        }
+    }
+    td {
+        i {
+            &.warning {
+                color: #FFA000;
+            }
+            &.default {
+                color: #969696;
+            }
+        }
+    }
+}

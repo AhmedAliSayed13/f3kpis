@@ -1,0 +1,13 @@
+{
+  "chart": {
+    "caption": "توزيع إجمالي عدد مشاريع المنطقة وفقا لسنة تسليم الموقع",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "المنطقة",
+    "yAxisName": "عدد المشاريع",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "head": ["إجمالي المدد الإضافية", "نسبة المدد الإضافية"]
+}

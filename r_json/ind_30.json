@@ -1,0 +1,43 @@
+{
+  "chart": {
+    "caption": "إجمالي الإنذارات حسب نوع الإنذار",
+    "subCaption": "الوحدة = انذار",
+    "xAxisName": "نوع الانذار",
+    "yAxisName": "عدد الانذارات",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "categories": [
+    {
+      "category": [
+        {
+          "label": "انذار أول"
+        },
+        {
+          "label": "انذار ثان"
+        },
+        {
+          "label": "انذار نهائي"
+        }
+      ]
+    }
+  ],
+  "dataset": [
+    {
+      "seriesname": "عدد الانذارات",
+      "data": [
+        {
+          "value": "1335"
+        },
+        {
+          "value": "1159"
+        },
+        {
+          "value": "968"
+        }
+      ]
+    }
+  ]
+}

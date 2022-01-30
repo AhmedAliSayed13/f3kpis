@@ -1,0 +1,13 @@
+{
+  "chart": {
+    "caption": "نصيب الإدارات التعليمية من إجمالي قيمة عقود المشاريع",
+    "subCaption": "الوحدة = نسبة مئوية %",
+    "xAxisName": "الإدارة التعليمية",
+    "yAxisName": "نسبة",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "head": ["نسبة قيمة المشاريع من المنطقة", "نسبة عدد المشاريع من المنطقة"]
+}

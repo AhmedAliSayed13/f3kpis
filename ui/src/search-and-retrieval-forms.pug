@@ -1,0 +1,57 @@
+extends ./_master
+
+append variables 
+    -var pageTitle = "Page 5"
+    -var pageName = "page-5"
+
+block content
+    include ./header
+
+    .page-content.pb-2
+        .container-fluid
+            .row: .col-lg-12.text-right
+                h3.page-title نماذج البحث و الأسترجاع 
+                .under-line
+
+        .container-fluid
+            ul(class="nav nav-pills" id="pills-tab" role="tablist")
+                each val, index in ['نماذج المناطق', 'نماذج المقاوليين', 'نماذج الأدارات التعليمية']
+                    li(class="nav-item"): a(
+                        class="nav-link"
+                        class=(index == 0 ? 'active' : '') 
+                        id="pills-"+ index +"-tab"
+                        data-toggle="pill" 
+                        href="#pills-" + index
+                        role="tab"
+                        aria-controls="pills-" + index 
+                        aria-selected=(index == 0)
+                        ) #{val}
+            
+            div(class="tab-content" id="pills-tabContent")
+                div(
+                    class="tab-pane fade show active" 
+                    id="pills-0"
+                    role="tabpanel" 
+                    aria-labelledby="pills-0-tab")
+                        .container-fluid: .row
+                            each val, index in ['المشاريع', 'مستوي الأنجاز الفعلي', 'مدد المشاريع', 'المقاوليين', 'التكاليف', 'الأنذارات']
+                                .col-lg-4.col-md-6.col-sm-12: .card
+                                    .card-header
+                                        h3 #{val}                
+                                        button.toggle-body-button: i(class="fas fa-" + (index == 0 ? 'minus' : 'plus') )
+                                    .card-body(class=(index == 0 ? 'd-block' : '')): ul.list-unstyled
+                                        each val, index in [' المشاريع للمناطق', '  نوع المشروع', '  حالة المشروع', '  حالة العقد', ' تحت التنفيذ']
+                                            li: a(href='#')
+                                                if index == 0 || index == 4 
+                                                    | اجماليات
+                                                else 
+                                                    | اجماليات حسب 
+                                                span #{val}
+                            
+                    
+                div(class="tab-pane fade" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab")
+                    h1 Add New Item
+
+                div(class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab")
+                    h1 Add New Item
+

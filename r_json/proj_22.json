@@ -1,0 +1,59 @@
+{
+  "chart": {
+    "caption": "تقسيم المناطق الي مجموعات باستخدام خوارزمية التجميع",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "المنطقة",
+    "yAxisName": "عدد",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "categories": [
+    {
+      "category": [
+        {
+          "label": "الرياض"
+        },
+        {
+          "label": "عسير"
+        }
+      ]
+    }
+  ],
+  "dataset": [
+    {
+      "seriesname": "عدد المشاريع",
+      "data": [
+        {
+          "value": "916"
+        },
+        {
+          "value": "697"
+        }
+      ]
+    },
+    {
+      "seriesname": "اجمالي تكلفة المشاريع (بالمليون ريال)",
+      "data": [
+        {
+          "value": "6339.598"
+        },
+        {
+          "value": "4112.927"
+        }
+      ]
+    },
+    {
+      "seriesname": "المجموعة",
+      "data": [
+        {
+          "value": "المجموعة العليا"
+        },
+        {
+          "value": "المجموعة العليا"
+        }
+      ]
+    }
+  ]
+}

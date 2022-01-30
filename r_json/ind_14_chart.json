@@ -1,0 +1,13 @@
+{
+  "chart": {
+    "caption": "نسب المشاريع التي حققت فعلي 100%",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "المنطقة",
+    "yAxisName": "عدد المشاريع",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "head": ["عدد المشاريع", "نسبة المشاريع"]
+}

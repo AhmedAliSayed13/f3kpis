@@ -1,0 +1,19 @@
+extends ./_master
+
+append variables 
+    -var pageTitle = "Page 6"
+    -var pageName = "page-6"
+
+block content
+    include ./header
+
+    .page-content
+        .container-fluid
+            .row: .col-lg-12.text-right
+                h3.page-title ألاستنباط
+                .under-line
+            
+            .row 
+                each val in ['التنبؤ بأستخدام التجميع', 'التنبؤ بأستخدام فترات الثقة', 'نماذج الانحدار المتعدد لمؤشرات المشاريع', 'التنبؤ بأستخدام حساب الأحتمالات', 'التنبؤ بأستخدام تقدير مستوي أداء المقاوليين']
+                    .col-lg-4.col-md-6.col-sm-12: .info-card: .card-content: h3 #{val}
+            

@@ -1,0 +1,121 @@
+{
+  "chart": {
+    "caption": "عدد المشاريع الجاري تنفيذها وليست ضمن برامجها الزمنية)",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "المنطقة",
+    "yAxisName": "عدد المشاريع",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "categories": [
+    {
+      "category": [
+        {
+          "label": "الأحساء"
+        },
+        {
+          "label": "الباحة"
+        },
+        {
+          "label": "الجوف"
+        },
+        {
+          "label": "الرياض"
+        },
+        {
+          "label": "الشرقية"
+        },
+        {
+          "label": "الطائف"
+        },
+        {
+          "label": "القصيم"
+        },
+        {
+          "label": "المدينة المنورة"
+        },
+        {
+          "label": "تبوك"
+        },
+        {
+          "label": "جازان"
+        },
+        {
+          "label": "جدة"
+        },
+        {
+          "label": "حائل"
+        },
+        {
+          "label": "حدود شمالية"
+        },
+        {
+          "label": "عسير"
+        },
+        {
+          "label": "مكة المكرمة"
+        },
+        {
+          "label": "نجران"
+        }
+      ]
+    }
+  ],
+  "dataset": [
+    {
+      "seriesname": "region",
+      "data": [
+        {
+          "value": "15"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "47"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "23"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "6"
+        }
+      ]
+    }
+  ]
+}

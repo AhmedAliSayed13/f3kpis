@@ -1,0 +1,31 @@
+{
+  "chart": {
+    "caption": "التنبؤ بمدة المشروع باستخدام نموذج الانحدار المتعدد",
+    "subCaption": "الوحدة = يوم",
+    "xAxisName": "مشروع",
+    "yAxisName": "مدة المشروع",
+    "formatnumberscale": "1",
+    "plottooltext": " $seriesName لـ  $label تساوي  $dataValue  ",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "categories": [
+    {
+      "category": [
+        {
+          "label": "الباحة"
+        }
+      ]
+    }
+  ],
+  "dataset": [
+    {
+      "seriesname": "التنبؤ بتكلفة المشروع (بالمليار ريال)",
+      "data": [
+        {
+          "value": "2.804"
+        }
+      ]
+    }
+  ]
+}

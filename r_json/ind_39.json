@@ -1,0 +1,121 @@
+{
+  "chart": {
+    "caption": "عدد المشاريع المسلمة نهائيا من بداية العام الميلادي الحالي)",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "المنطقة",
+    "yAxisName": "عدد المشاريع",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "categories": [
+    {
+      "category": [
+        {
+          "label": "الأحساء"
+        },
+        {
+          "label": "الباحة"
+        },
+        {
+          "label": "الجوف"
+        },
+        {
+          "label": "الرياض"
+        },
+        {
+          "label": "الشرقية"
+        },
+        {
+          "label": "الطائف"
+        },
+        {
+          "label": "القصيم"
+        },
+        {
+          "label": "المدينة المنورة"
+        },
+        {
+          "label": "تبوك"
+        },
+        {
+          "label": "جازان"
+        },
+        {
+          "label": "جدة"
+        },
+        {
+          "label": "حائل"
+        },
+        {
+          "label": "حدود شمالية"
+        },
+        {
+          "label": "عسير"
+        },
+        {
+          "label": "مكة المكرمة"
+        },
+        {
+          "label": "نجران"
+        }
+      ]
+    }
+  ],
+  "dataset": [
+    {
+      "seriesname": "region",
+      "data": [
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    }
+  ]
+}

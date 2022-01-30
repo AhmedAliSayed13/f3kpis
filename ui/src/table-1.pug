@@ -1,0 +1,38 @@
+extends ./_master
+
+append variables 
+    -var pageTitle = "Table"
+    -var pageName = "table"
+    -var pageNumber = 1
+    -var pageHeader = 'نماذج البحث و الأسترجاع'
+    -var pageDescription = 'إجماليات'
+    -var pageDescriptionColored = 'حسب نوع المشروع'
+
+block content
+    include ./header
+    
+    include ./page-header
+    
+    .container-fluid: .row: .col-lg-12
+        table.table.table-striped.text-right    
+            thead
+                tr
+                    th(rowspan=2) م
+                    th(rowspan=2) أسم المنطقة
+                    th(colspan=4 class="text-center") حالات المشروع
+                tr
+                    th اجمالي عدد المشاريع
+                    th عدد المشاريع المسلمة ابتدائي
+                    th عدد المشاريع المسلمة نهائي
+                    th مشاريع تم التعاقد عليها
+            tbody 
+                each val in [1,2,3,4,5,6,7,8,9]
+                    tr 
+                        td: i.fas.fa-circle.default
+                        td: i.fas.fa-circle.default 
+                        td: i.fas.fa-circle.warning
+                        td: i.fas.fa-circle.default 
+                        td: i.fas.fa-circle.default 
+                        td: i.fas.fa-circle.warning 
+                    
+                

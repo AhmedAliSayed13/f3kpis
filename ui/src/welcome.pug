@@ -1,0 +1,22 @@
+extends _master
+
+append variables
+    -var pageTitle = "مرحباً بك";
+    -var pageName = 'welcome-page'
+
+block content
+
+    include header
+
+    .content: .container-fluid 
+        .row: .col-md-12: h3.page-title من فضلك أختر
+        
+        .row.cards-container
+            each item in [ {text: 'مؤشرات الأداء', iconPath: '../images/icons/website-1.svg', link: './performance-indicators.html'}, {text: 'الأستنباط', iconPath: '../images/icons/analytics-1.svg', link: '/projections/show/group'}, {text: 'مؤشرات البحث و الأسترجاع', iconPath: '../images/icons/magnifier-1.svg', link: './search-and-retrieval-forms.html'} ]
+                .col-lg-4.col-md-6.col-12: .card-info
+                    .circle 
+                    .card-content
+                        a(href=item.link)
+                            img(src=item.iconPath, alt="", srcset="")
+                            |#{item.text}
+                

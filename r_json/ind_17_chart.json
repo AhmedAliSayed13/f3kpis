@@ -1,0 +1,13 @@
+{
+  "chart": {
+    "caption": "إجمالي المدد الإضافية لكل منطقة",
+    "subCaption": "الوحدة = يوم",
+    "xAxisName": "المنطقة",
+    "yAxisName": "إجمالي المدد الإضافية",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "head": ["إجمالي المدد الإضافية", "نسبة المدد الإضافية"]
+}

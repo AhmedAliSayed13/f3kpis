@@ -1,0 +1,49 @@
+{
+  "chart": {
+    "caption": "إجمالي المشاريع حسب حالة المشروع",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "حالة المشورع",
+    "yAxisName": "عدد المشاريع",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "categories": [
+    {
+      "category": [
+        {
+          "label": "تم الربط"
+        },
+        {
+          "label": "سلم إبتدائي"
+        },
+        {
+          "label": "سلم الموقع و لم يسلم إبتدائي - جيد"
+        },
+        {
+          "label": "سلم نهائي"
+        }
+      ]
+    }
+  ],
+  "dataset": [
+    {
+      "seriesname": "status",
+      "data": [
+        {
+          "value": "178"
+        },
+        {
+          "value": "2076"
+        },
+        {
+          "value": "547"
+        },
+        {
+          "value": "1538"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "chart": {
+    "caption": "إجمالي الإنذارات حسب نوع الإنذار",
+    "subCaption": "الوحدة = انذار",
+    "xAxisName": "نوع الانذار",
+    "yAxisName": "عدد الانذارات",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "head": ["نوع الانذار", "عدد الانذارات"],
+  "colhead": ["انذار أول", "انذار ثان", "انذار نهائي"]
+}

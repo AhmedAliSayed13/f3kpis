@@ -1,0 +1,810 @@
+{
+  "chart": {
+    "caption": "توزيع إجمالي عدد مشاريع المنطقة وفقا لسنة تسليم الموقع",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "المنطقة",
+    "yAxisName": "عدد المشاريع",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "categories": [
+    {
+      "category": [
+        {
+          "label": "الأحساء"
+        },
+        {
+          "label": "الباحة"
+        },
+        {
+          "label": "الجوف"
+        },
+        {
+          "label": "الرياض"
+        },
+        {
+          "label": "الشرقية"
+        },
+        {
+          "label": "الطائف"
+        },
+        {
+          "label": "القصيم"
+        },
+        {
+          "label": "المدينة المنورة"
+        },
+        {
+          "label": "تبوك"
+        },
+        {
+          "label": "جازان"
+        },
+        {
+          "label": "جدة"
+        },
+        {
+          "label": "حائل"
+        },
+        {
+          "label": "حدود شمالية"
+        },
+        {
+          "label": "عسير"
+        },
+        {
+          "label": "مكة المكرمة"
+        },
+        {
+          "label": "نجران"
+        }
+      ]
+    }
+  ],
+  "dataset": [
+    {
+      "seriesname": "1429",
+      "data": [
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "seriesname": "1430",
+      "data": [
+        {
+          "value": "18"
+        },
+        {
+          "value": "31"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "204"
+        },
+        {
+          "value": "74"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": "88"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": "36"
+        },
+        {
+          "value": "54"
+        },
+        {
+          "value": "49"
+        },
+        {
+          "value": "35"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "176"
+        },
+        {
+          "value": "80"
+        },
+        {
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "seriesname": "1431",
+      "data": [
+        {
+          "value": "25"
+        },
+        {
+          "value": "23"
+        },
+        {
+          "value": "31"
+        },
+        {
+          "value": "113"
+        },
+        {
+          "value": "48"
+        },
+        {
+          "value": "46"
+        },
+        {
+          "value": "68"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "49"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "193"
+        },
+        {
+          "value": "58"
+        },
+        {
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "seriesname": "1432",
+      "data": [
+        {
+          "value": "23"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "91"
+        },
+        {
+          "value": "38"
+        },
+        {
+          "value": "26"
+        },
+        {
+          "value": "31"
+        },
+        {
+          "value": "33"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "35"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "70"
+        },
+        {
+          "value": "59"
+        },
+        {
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "seriesname": "1433",
+      "data": [
+        {
+          "value": "19"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "62"
+        },
+        {
+          "value": "26"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "56"
+        },
+        {
+          "value": "29"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "71"
+        },
+        {
+          "value": "47"
+        },
+        {
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "seriesname": "1434",
+      "data": [
+        {
+          "value": "8"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "145"
+        },
+        {
+          "value": "44"
+        },
+        {
+          "value": "32"
+        },
+        {
+          "value": "81"
+        },
+        {
+          "value": "53"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "31"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "37"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": "33"
+        }
+      ]
+    },
+    {
+      "seriesname": "1435",
+      "data": [
+        {
+          "value": "22"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "142"
+        },
+        {
+          "value": "52"
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": "46"
+        },
+        {
+          "value": "31"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "88"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "35"
+        },
+        {
+          "value": "55"
+        },
+        {
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "seriesname": "1436",
+      "data": [
+        {
+          "value": "14"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "99"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "33"
+        },
+        {
+          "value": "67"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "65"
+        },
+        {
+          "value": "44"
+        },
+        {
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "seriesname": "1437",
+      "data": [
+        {
+          "value": "10"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "27"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "seriesname": "1438",
+      "data": [
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "seriesname": "1439",
+      "data": [
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "seriesname": "1440",
+      "data": [
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "seriesname": "1441",
+      "data": [
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "seriesname": "1445",
+      "data": [
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    }
+  ]
+}

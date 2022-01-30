@@ -1,0 +1,84 @@
+{
+  "chart": {
+    "caption": "نسب الإنجاز على مستوى المقاول والمشاريع",
+    "subCaption": "الوحدة = نسبة مئوية %",
+    "xAxisName": "مستوي الانجاز",
+    "yAxisName": "عدد",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "categories": [
+    {
+      "category": [
+        {
+          "label": "مستوي انجاز 0%"
+        },
+        {
+          "label": "مستوي انجاز من 0% الي 25%"
+        },
+        {
+          "label": "مستوي انجاز من 25% الي 50%"
+        },
+        {
+          "label": "مستوي انجاز من 50% الي 75%"
+        },
+        {
+          "label": "مستوي انجاز من 75% الي اقل من 100%"
+        },
+        {
+          "label": "مستوي انجاز 100%"
+        }
+      ]
+    }
+  ],
+  "dataset": [
+    {
+      "seriesname": "عدد المقاولين",
+      "data": [
+        {
+          "value": "93"
+        },
+        {
+          "value": "245"
+        },
+        {
+          "value": "249"
+        },
+        {
+          "value": "285"
+        },
+        {
+          "value": "579"
+        },
+        {
+          "value": "761"
+        }
+      ]
+    },
+    {
+      "seriesname": "عدد المشاريع",
+      "data": [
+        {
+          "value": "129"
+        },
+        {
+          "value": "391"
+        },
+        {
+          "value": "398"
+        },
+        {
+          "value": "474"
+        },
+        {
+          "value": "1217"
+        },
+        {
+          "value": "2012"
+        }
+      ]
+    }
+  ]
+}

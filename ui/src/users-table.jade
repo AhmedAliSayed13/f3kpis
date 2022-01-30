@@ -1,0 +1,63 @@
+extends ./_master
+
+append variables
+    -var pageTitle = "Users Table"
+    -var pageName = "users-table"
+    -var pageNumber = 1
+    -var pageHeader = 'اﻷعضاء'
+    -var pageDescription = 'عدد اﻷعضاء الحالى'
+    -var pageDescriptionColored = '25 عضو'
+
+block content
+    include ./header
+    
+    .container-fluid: .row: .col-lg-12
+        
+        nav(style='padding: 25px 40px 0px' class="py-0 page-header"): .container-fluid: .row
+            .col-lg-8.col-md-12.text-right: .page-data-content 
+                h3 #{pageHeader}
+                p 
+                    | #{pageDescription} 
+                    span #{pageDescriptionColored}
+                button(class="btn btn-success" id="create_user_btn" data-toggle="modal" data-target="#create-users-modal")
+                    i.fas.fa-plus 
+                    | &nbsp; اضافه عضو جديد
+
+        table.table.table-striped.text-right
+            thead
+                tr
+                    th م
+                    th صورة الملف الشخصي
+                    th اﻷسم
+                    th اﻷيميل
+                    th الأعدادات
+            tbody 
+                each val in [1,2,3,4,5,6,7,8,9]
+                    tr 
+                        td #{val}
+                        td: img(src="https://picsum.photos/60", class="img-thumbnail")
+                        td Lorem Ipsum Dolar Sit Amit
+                        td email@company.com
+                        td
+                            a(class="btn btn-primary text-white ml-2" href="#" title="عرض"): i.fas.fa-eye
+                            a(class="btn btn-info text-white ml-2" href="#" title="تعديل"): i.fas.fa-edit
+                            a(class="btn btn-danger text-white ml-2" href="#" title="حذف"): i.fas.fa-trash
+
+    .modal.fade#create-users-modal: .modal-dialog.modal-dialog-centered: .modal-content
+        .modal-header: h5.modal-title أضافه عضو جديد
+        .modal-body.text-right: .row
+            .col-12
+                .form-group
+                    label(for="name") اﻷسم
+                    input(type="text" class="form-control p-4" id="name")
+                    
+                .form-group
+                    label(for="email") البريد اﻹلكترونى
+                    input(type="email" class="form-control p-4" id="email")
+                
+                .form-group
+                    label(for="image") صورة الملف الشخصي
+                    .image-upload-icon#upload-btn: i.fas.fa-upload 
+                    input(type="file" class="form-control d-none" id="image")
+                
+        .modal-footer.text-left: button(class="btn btn-primary p-2" id="create_user_submit_btn" type="submit" ) أضافه

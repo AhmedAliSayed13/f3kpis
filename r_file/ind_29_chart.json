@@ -1,0 +1,10 @@
+{
+  "caption": "نسب القيم الإضافية للمقاول",
+  "subCaption": "الوحدة = نسبة مئوية %",
+  "xAxisName": "المقاول",
+  "yAxisName": "نسبة",
+  "formatnumberscale": "1",
+  "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+  "theme": "fusion",
+  "drawcrossline": "1"
+}

@@ -1,0 +1,121 @@
+{
+  "chart": {
+    "caption": "عدد المشاريع الجاري تنفيذها والصادر لها تمديد مدة)",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "المنطقة",
+    "yAxisName": "عدد المشاريع تحت التنفيذ",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "categories": [
+    {
+      "category": [
+        {
+          "label": "الأحساء"
+        },
+        {
+          "label": "الباحة"
+        },
+        {
+          "label": "الجوف"
+        },
+        {
+          "label": "الرياض"
+        },
+        {
+          "label": "الشرقية"
+        },
+        {
+          "label": "الطائف"
+        },
+        {
+          "label": "القصيم"
+        },
+        {
+          "label": "المدينة المنورة"
+        },
+        {
+          "label": "تبوك"
+        },
+        {
+          "label": "جازان"
+        },
+        {
+          "label": "جدة"
+        },
+        {
+          "label": "حائل"
+        },
+        {
+          "label": "حدود شمالية"
+        },
+        {
+          "label": "عسير"
+        },
+        {
+          "label": "مكة المكرمة"
+        },
+        {
+          "label": "نجران"
+        }
+      ]
+    }
+  ],
+  "dataset": [
+    {
+      "seriesname": "region",
+      "data": [
+        {
+          "value": "23"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "106"
+        },
+        {
+          "value": "36"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "68"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "53"
+        },
+        {
+          "value": "47"
+        },
+        {
+          "value": "29"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "35"
+        },
+        {
+          "value": "38"
+        },
+        {
+          "value": "11"
+        }
+      ]
+    }
+  ]
+}

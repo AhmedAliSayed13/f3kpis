@@ -1,0 +1,10 @@
+{
+  "caption": "عدد المشاريع الجاري تنفيذها وتسير طبقا لبرامجها الزمنية)",
+  "subCaption": "الوحدة = مشروع",
+  "xAxisName": "المنطقة",
+  "yAxisName": "عدد المشاريع تحت التنفيذ",
+  "formatnumberscale": "1",
+  "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+  "theme": "fusion",
+  "drawcrossline": "1"
+}

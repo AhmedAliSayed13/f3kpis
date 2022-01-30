@@ -1,0 +1,96 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "ed9cd1d2a03d14ec721c61d21da02252",
+    "packages": [
+        {
+            "name": "anandpilania/f3-validator",
+            "version": "v1.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AnandPilania/f3-validator.git",
+                "reference": "ee5a1f648a14200656765259ede8e51ac7da1698"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AnandPilania/f3-validator/zipball/ee5a1f648a14200656765259ede8e51ac7da1698",
+                "reference": "ee5a1f648a14200656765259ede8e51ac7da1698",
+                "shasum": ""
+            },
+            "require": {
+                "bcosca/fatfree-core": "^3.6"
+            },
+            "suggest": {
+                "anandpilania/f3-jwt-middleware": "JWT Auth Middleware for FatFreeFramework.",
+                "anandpilania/f3-token-middleware": "Token Auth Middleware for FatFreeFramework."
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anand Pilania",
+                    "email": "pilaniaanand@gmail.com"
+                }
+            ],
+            "description": "Validator package for FatFreeFramework.",
+            "keywords": [
+                "F3",
+                "anandpilania",
+                "f3-validator",
+                "fatfree",
+                "fatfreeframework"
+            ],
+            "time": "2019-08-12T17:09:09+00:00"
+        },
+        {
+            "name": "bcosca/fatfree-core",
+            "version": "3.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bcosca/fatfree-core.git",
+                "reference": "a0f7ecf456a2f1e099a9b6d7aedc22970be56030"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bcosca/fatfree-core/zipball/a0f7ecf456a2f1e099a9b6d7aedc22970be56030",
+                "reference": "a0f7ecf456a2f1e099a9b6d7aedc22970be56030",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "."
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "description": "A powerful yet easy-to-use PHP micro-framework designed to help you build dynamic and robust Web applications - fast!",
+            "homepage": "http://fatfreeframework.com/",
+            "time": "2020-05-28T16:14:27+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

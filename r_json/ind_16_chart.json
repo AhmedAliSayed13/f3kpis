@@ -1,0 +1,13 @@
+{
+  "chart": {
+    "caption": "إجمالي مدد المشاريع لكل منطقة",
+    "subCaption": "الوحدة = يوم",
+    "xAxisName": "المنطقة",
+    "yAxisName": "إجمالي مدد المشاريع",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "head": ["إجمالي مدد المشاريع", "نسبة مدد المشاريع"]
+}

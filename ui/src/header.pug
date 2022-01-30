@@ -1,0 +1,30 @@
+header
+    nav.container-fluid: .row
+    
+        .col-lg-9.col-md-8.col-5
+            button#right-menu-button: i.fas.fa-bars
+            
+            #right-menu: ul.list-inline
+                li.list-inline-item
+                    a#profile-icon
+                        img(src="../images/icons/user-icon.png", alt="profile-icon")
+
+                //- don't remove the comming space
+                if showAllMenu            
+                each item in [ {text: 'مؤشرات الأداء', iconPath: '../images/icons/website-1.svg', link: './performance-indicators.html'}, {text: 'الأستنباط', iconPath: '../images/icons/analytics-1.svg', link: '/projections/show/group'}, {text: 'مؤشرات البحث و الأسترجاع', iconPath: '../images/icons/magnifier-1.svg', link: './search-and-retrieval-forms.html'} ]
+                    li.list-inline-item.header-items: a(href=item.link)
+                        img(src=item.iconPath, alt="")
+                        span #{item.text}
+
+        .col-lg-2.col-md-4.col-7: .logo-box: a(href="./welcome.html"): img(src=logoPath alt="")
+
+    //- Profile Menu
+    #profile-menu
+        .arrow
+
+        ul.list-inline
+            each val in [{text: "بيانات المستخدم", iconPath: "../images/icons/user.svg", link: './profile.html'}, {text: "تغيير كلمه المرور", iconPath: "../images/icons/lock.svg", link: './profile.html#change-password'}, {text: "تسجيل خروج", iconPath: "../images/icons/logout.svg"}]
+                li: a(href=val.link)
+                    img(src=val.iconPath, alt="") 
+                    | #{val.text}
+

@@ -1,0 +1,13 @@
+{
+  "chart": {
+    "caption": "حساب عدد المقاولين لكل منطقة",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "المنطقة",
+    "yAxisName": "عدد",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "head": ["عدد المقاولين", "عدد المشاريع"]
+}

@@ -1,0 +1,10 @@
+{
+  "caption": "نسب القيم الإضافية للمناطق",
+  "subCaption": "الوحدة = نسبة مئوية %",
+  "xAxisName": "المنطقة",
+  "yAxisName": "نسبة",
+  "formatnumberscale": "1",
+  "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+  "theme": "fusion",
+  "drawcrossline": "1"
+}

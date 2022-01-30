@@ -1,0 +1,15 @@
+{
+  "chart": {
+    "caption": "تقسيم المناطق الي مجموعات باستخدام خوارزمية التجميع",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "المنطقة",
+    "yAxisName": "عدد",
+    "formatnumberscale": "1",
+    "plottooltext": "  عدد المشاريع $xDataValue و اجمالي تكلفة المشاريع $yDataValue  ب منطقة $displayValue - $seriesName",
+    "theme": "fusion",
+    "drawcrossline": "1",
+    "bgcolor":"ffffff"
+  },
+  "head": ["عدد المشاريع", "اجمالي تكلفة المشاريع (بالمليون ريال)", "المجموعة"],
+  "head2": ["المجموعة الدنيا", "المجموعة المتوسطة", "المجموعة العليا"]
+}

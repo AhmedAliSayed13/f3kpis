@@ -1,0 +1,74 @@
+.login-page,
+.forgot-password {
+    .right-side {
+        margin-top: 55px;
+        text-align: right;
+        padding-right: 209px;
+        h3 {
+            font: var(--unnamed-font-style-normal) normal bold 40px/75px $primaryFontFamily;
+            text-align: right;
+            font: normal normal bold 40px/75px $primaryFontFamily;
+            letter-spacing: 0px;
+            color: #0C8575;
+            opacity: 1;
+            margin-bottom: 25px;
+        }
+        h4 {
+            text-align: right;
+            font: normal normal bold 38px/72px $primaryFontFamily;
+            letter-spacing: 0px;
+            margin-bottom: 25px;
+            color: #000000;
+            opacity: 1;
+        }
+        .form-group {
+            margin-bottom: 68.5px;
+            &:last-of-type {
+                text-align: left;
+            }
+            label {
+                // top: 329px;
+                // left: 918px;
+                height: 39px;
+                font: var(--unnamed-font-style-normal) normal bold 21px/39px $primaryFontFamily;
+                text-align: left;
+                font: normal normal bold 21px/39px $primaryFontFamily;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+            }
+            input {
+                height: 70px;
+            }
+            button[type=submit] {
+                width: 400px;
+                // height: 93px;
+                font: normal normal bold 32px/60px $primaryFontFamily;
+            }
+        }
+    }
+    .left-side {
+        position: relative;
+        min-height: 100vh;
+        background-color: $primaryColor;
+        .logo-box {
+            width: 80%;
+            height: 281px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            border-radius: 18px;
+            opacity: 1;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -30%);
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 170px;
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+{
+  "chart": {
+    "caption": "تقدير مستوي أداء المقاولين",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "المقاول",
+    "yAxisName": "عدد",
+    "formatnumberscale": "1",
+    "plottooltext": " $seriesName لــ   $label  تساوي $dataValue  ",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "categories": [
+    {
+      "category": [
+        {
+          "label": "مؤسسة الغربى للتجارة والمقاولات"
+        }
+      ]
+    }
+  ],
+  "dataset": [
+    {
+      "seriesname": "عدد المشاريع",
+      "data": [
+        {
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "seriesname": "عدد المشاريع المسلمة ابتدائي",
+      "data": [
+        {
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "seriesname": "عدد المشاريع المسلمة نهائي",
+      "data": [
+        {
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "seriesname": "عدد المشاريع المسحوبة",
+      "data": [
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "seriesname": "عدد المشاريع المفسوخة",
+      "data": [
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "seriesname": "متوسط الانجاز الفعلي",
+      "data": [
+        {
+          "value": "76.733"
+        }
+      ]
+    },
+    {
+      "seriesname": "عدد الانذارات",
+      "data": [
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "seriesname": "عدد الإنذارات النهائية",
+      "data": [
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "seriesname": "مؤشر الاداء العام",
+      "data": [
+        {
+          "value": "60.29"
+        }
+      ]
+    }
+  ]
+}

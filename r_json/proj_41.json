@@ -1,0 +1,63 @@
+{
+  "chart": {
+    "caption": "حساب احتمالات الخصائص الحرجة للمشاريع علي مستوي المقاولين",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "المقاول",
+    "yAxisName": "عدد",
+    "formatnumberscale": "1",
+    "plottooltext": " $seriesName لـ  $label تساوي  $dataValue  ",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "categories": [
+    {
+      "category": [
+        {
+          "label": "مؤسسة الغربى للتجارة والمقاولات"
+        }
+      ]
+    }
+  ],
+  "dataset": [
+    {
+      "seriesname": "احتمال السحب للمشروع (%)",
+      "data": [
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "seriesname": "احتمال الفسخ للمشروع (%)",
+      "data": [
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "seriesname": "احتمال حصول المشروع علي انذارات أول (%)",
+      "data": [
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "seriesname": "احتمال حصول المشروع علي انذارات ثان (%)",
+      "data": [
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "seriesname": "احتمال حصول المشروع علي انذارات نهائي (%)",
+      "data": [
+        {
+          "value": "0"
+        }
+      ]
+    }
+  ]
+}

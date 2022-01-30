@@ -1,0 +1,10 @@
+{
+  "caption": "نسبة كل منطقة من إجمالي عدد المشروعات",
+  "subCaption": "الوحدة = نسبة مئوية %",
+  "xAxisName": "المنطقة",
+  "yAxisName": "نسبة المشاريع",
+  "formatnumberscale": "1",
+  "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+  "theme": "fusion",
+  "drawcrossline": "1"
+}

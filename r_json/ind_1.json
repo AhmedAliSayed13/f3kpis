@@ -1,0 +1,121 @@
+{
+  "chart": {
+    "caption": "إجمالي عدد المشروعات بالمناطق",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "المنطقة",
+    "yAxisName": "عدد المشاريع",
+    "plottooltext": "<b> $label :</b> $seriesname :$dataValue",
+    "formatnumberscale": "1",
+     "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "categories": [
+    {
+      "category": [
+        {
+          "label": "الأحساء"
+        },
+        {
+          "label": "الباحة"
+        },
+        {
+          "label": "الجوف"
+        },
+        {
+          "label": "الرياض"
+        },
+        {
+          "label": "الشرقية"
+        },
+        {
+          "label": "الطائف"
+        },
+        {
+          "label": "القصيم"
+        },
+        {
+          "label": "المدينة المنورة"
+        },
+        {
+          "label": "تبوك"
+        },
+        {
+          "label": "جازان"
+        },
+        {
+          "label": "جدة"
+        },
+        {
+          "label": "حائل"
+        },
+        {
+          "label": "حدود شمالية"
+        },
+        {
+          "label": "عسير"
+        },
+        {
+          "label": "مكة المكرمة"
+        },
+        {
+          "label": "نجران"
+        }
+      ]
+    }
+  ],
+  "dataset": [
+    {
+      "seriesname": "region",
+      "data": [
+        {
+          "value": "146"
+        },
+        {
+          "value": "150"
+        },
+        {
+          "value": "145"
+        },
+        {
+          "value": "908"
+        },
+        {
+          "value": "337"
+        },
+        {
+          "value": "214"
+        },
+        {
+          "value": "430"
+        },
+        {
+          "value": "346"
+        },
+        {
+          "value": "137"
+        },
+        {
+          "value": "338"
+        },
+        {
+          "value": "147"
+        },
+        {
+          "value": "224"
+        },
+        {
+          "value": "83"
+        },
+        {
+          "value": "694"
+        },
+        {
+          "value": "428"
+        },
+        {
+          "value": "111"
+        }
+      ]
+    }
+  ]
+}

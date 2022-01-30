@@ -1,0 +1,107 @@
+extends ./_master
+
+append variables 
+    -var pageTitle = "Home Page"
+    -var pageName = "home-page"
+
+block content
+    include ./header
+
+    .page-content
+        .container-fluid
+            .row: .col-lg-12.text-right
+                h3.page-title مؤشرات الأداء
+                .under-line
+            
+            .row
+                .col-lg-8: .row
+                    .col-lg-6
+                        .form-group.search-form
+                            input(type="text" class="form-control" placeholder="البحث")
+                            button.search-button: i.fas.fa-search
+                    .col-lg-6
+                        .form-group.select-menu
+                            label(for="select") تصنيف المؤشرات
+                            select(class="form-control") 
+                                each val in ['الرياض', 'الدوحه']
+                                    option(value=val) #{val}
+            
+            .row: .col-12: h4.page-title مؤشر 1 في مدينة الرياض
+
+            #owl-carousel-container
+                button.navigation-button#right-nav-button <i class="fas fa-arrow-right"></i>
+        
+                button.navigation-button#left-nav-button <i class="fas fa-arrow-left"></i>
+
+                .owl-carousel
+                    each val in ['اجمالي عدد مشاريع البنين و البنات لكل منطقة', 'عدد المشاريع الجاري تنفيذها طبقا لبرامجها الزمنية', 'نسب القيم الإضافية للمناطق', 'مؤشر 1', 'مؤشر 2', 'مؤشر 3 ']
+                        .item
+                            .info-card: .info-content
+                                img(src="../images/icons/analytics.png", alt="")
+                                h5 #{val}
+
+                            .info-card: .info-content
+                                img(src="../images/icons/analytics.png", alt="")
+                                h5 #{val}
+
+        .container-fluid#data-container
+            ul(class="nav nav-pills" id="pills-tab" role="tablist")
+                each val, index in ['عمودى', 'مخروطى', 'دائري']
+                    li(class="nav-item"): a(
+                        class="nav-link"
+                        class=(index == 0 ? 'active' : '') 
+                        id="pills-"+ index +"-tab"
+                        data-toggle="pill" 
+                        href="#pills-" + index
+                        role="tab"
+                        aria-controls="pills-" + index 
+                        aria-selected=(index == 0)
+                        ) #{val}
+            
+            div(class="tab-content" id="pills-tabContent")
+                div(
+                    class="tab-pane fade show active" 
+                    id="pills-0"
+                    role="tabpanel" 
+                    aria-labelledby="pills-0-tab")
+                        .card
+                            .card-header.text-right: ul.list-inline    
+                                li.list-inline-item
+                                    a(href="#" class="export-item")
+                                        i.fas.fa-plus
+                                        | تصدير
+                                    
+                                    
+                                li.list-inline-item.select-date-title أختيار تاريخ محدد
+                                
+                                li.list-inline-item
+                                    label(for="from") من 
+                                    input(type="datetime-local" class="form-control d-inline-block" id="from")
+        
+                                li.list-inline-item
+                                    label(for="to") إلى
+                                    input(type="datetime-local" class="form-control d-inline-block" id="to")
+                        
+                            .card-body: .container-fluid.statics
+                                .row
+                                    .col-lg-8.col-sm-12.text-right: .charts
+                                        p Charts Go Here
+                                    .col-lg-4.col-sm-12.text-right.info-list
+                                        ul.list-unstyled
+                                            each image, index in ['magnifier.svg', 'archive.png', 'analytics.svg', 'website.svg', 'statistics.png']
+                                                li 
+                                                    .icon: img(src="../images/icons/" + image)
+                                                    span معلومة رقم #{index + 1}
+                                .row
+                                    each val in [1, 2, 3, 4, 5, 6]
+                                        .col-lg-4.col-md-6.col-sm-12.pl-0.text-right: .results-box: .results-content
+                                            img(src="../images/icons/information.svg", alt="") 
+                                            h4 النتائج المستخلصه
+                                            p 
+                                                | لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                div(class="tab-pane fade" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab")
+                    h1 asdwsd;flkds
+
+                div(class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab")
+                    h1 asdwsd;flkdsasdjaspd

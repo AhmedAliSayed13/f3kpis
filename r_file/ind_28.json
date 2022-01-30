@@ -1,0 +1,121 @@
+{
+  "chart": {
+    "caption": "نسب القيم الإضافية للمناطق",
+    "subCaption": "الوحدة = نسبة مئوية %",
+    "xAxisName": "المنطقة",
+    "yAxisName": "نسبة",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "categories": [
+    {
+      "category": [
+        {
+          "label": "الأحساء"
+        },
+        {
+          "label": "الباحة"
+        },
+        {
+          "label": "الجوف"
+        },
+        {
+          "label": "الرياض"
+        },
+        {
+          "label": "الشرقية"
+        },
+        {
+          "label": "الطائف"
+        },
+        {
+          "label": "القصيم"
+        },
+        {
+          "label": "المدينة المنورة"
+        },
+        {
+          "label": "تبوك"
+        },
+        {
+          "label": "جازان"
+        },
+        {
+          "label": "جدة"
+        },
+        {
+          "label": "حائل"
+        },
+        {
+          "label": "حدود شمالية"
+        },
+        {
+          "label": "عسير"
+        },
+        {
+          "label": "مكة المكرمة"
+        },
+        {
+          "label": "نجران"
+        }
+      ]
+    }
+  ],
+  "dataset": [
+    {
+      "seriesname": "region",
+      "data": [
+        {
+          "value": "5.132"
+        },
+        {
+          "value": "4.863"
+        },
+        {
+          "value": "4.197"
+        },
+        {
+          "value": "5.151"
+        },
+        {
+          "value": "3.552"
+        },
+        {
+          "value": "1.034"
+        },
+        {
+          "value": "4.523"
+        },
+        {
+          "value": "3.553"
+        },
+        {
+          "value": "4.823"
+        },
+        {
+          "value": "4.675"
+        },
+        {
+          "value": "4.343"
+        },
+        {
+          "value": "3.341"
+        },
+        {
+          "value": "2.921"
+        },
+        {
+          "value": "2.259"
+        },
+        {
+          "value": "2.153"
+        },
+        {
+          "value": "4.042"
+        }
+      ]
+    }
+  ]
+}

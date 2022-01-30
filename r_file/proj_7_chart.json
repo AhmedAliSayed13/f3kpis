@@ -1,0 +1,13 @@
+{
+  "chart": {
+    "caption": "التنبؤ بمدة المشروع كقيمة متوقعة مع فترة ثقة 95% علي مستوي الإدارات التعليمية",
+    "subCaption": "الوحدة = يوم",
+    "xAxisName": "الإدارة التعليمية",
+    "yAxisName": "عدد",
+    "formatnumberscale": "1",
+	"plottooltext": " $seriesName لادارة  $label   تساوي $dataValue  ",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "head": ["قيمة متوقعة (بالايام)", "حدي أدني (بالايام)", "حد أعلي (بالايام)"]
+}

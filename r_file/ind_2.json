@@ -1,0 +1,121 @@
+{
+  "chart": {
+    "caption": "نسبة كل منطقة من إجمالي عدد المشروعات",
+    "subCaption": "الوحدة = نسبة مئوية %",
+    "xAxisName": "المنطقة",
+    "yAxisName": "نسبة المشاريع",
+    "formatnumberscale": "1",
+    "plottooltext": "<b> $label :</b> $seriesname :$dataValue",
+     "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "categories": [
+    {
+      "category": [
+        {
+          "label": "الأحساء"
+        },
+        {
+          "label": "الباحة"
+        },
+        {
+          "label": "الجوف"
+        },
+        {
+          "label": "الرياض"
+        },
+        {
+          "label": "الشرقية"
+        },
+        {
+          "label": "الطائف"
+        },
+        {
+          "label": "القصيم"
+        },
+        {
+          "label": "المدينة المنورة"
+        },
+        {
+          "label": "تبوك"
+        },
+        {
+          "label": "جازان"
+        },
+        {
+          "label": "جدة"
+        },
+        {
+          "label": "حائل"
+        },
+        {
+          "label": "حدود شمالية"
+        },
+        {
+          "label": "عسير"
+        },
+        {
+          "label": "مكة المكرمة"
+        },
+        {
+          "label": "نجران"
+        }
+      ]
+    }
+  ],
+  "dataset": [
+    {
+      "seriesname": "region",
+      "data": [
+        {
+          "value": "2.999"
+        },
+        {
+          "value": "3.081"
+        },
+        {
+          "value": "2.978"
+        },
+        {
+          "value": "18.649"
+        },
+        {
+          "value": "6.921"
+        },
+        {
+          "value": "4.395"
+        },
+        {
+          "value": "8.831"
+        },
+        {
+          "value": "7.106"
+        },
+        {
+          "value": "2.814"
+        },
+        {
+          "value": "6.942"
+        },
+        {
+          "value": "3.019"
+        },
+        {
+          "value": "4.601"
+        },
+        {
+          "value": "1.705"
+        },
+        {
+          "value": "14.253"
+        },
+        {
+          "value": "8.79"
+        },
+        {
+          "value": "2.28"
+        }
+      ]
+    }
+  ]
+}

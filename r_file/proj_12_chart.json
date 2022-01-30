@@ -1,0 +1,13 @@
+{
+  "chart": {
+    "caption": "التنبؤ بمستوي الانجاز للمشروع كقيمة متوقعة مع فترة ثقة 95% علي مستوي المناطق",
+    "subCaption": "الوحدة = نسبة مئوية %",
+    "xAxisName": "المنطقة",
+    "yAxisName": "نسبة الانجاز",
+    "formatnumberscale": "1",
+	"plottooltext": " $seriesName لمنطقة   $label  تساوي $dataValue  ",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "head": ["قيمة متوقعة", "حدي أدني", "حد أعلي"]
+}

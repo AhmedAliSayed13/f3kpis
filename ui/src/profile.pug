@@ -1,0 +1,70 @@
+extends ./_master
+
+append variables 
+    -var pageTitle = "الملف الشخصى"
+    -var pageName = "profile-page"
+
+block content
+    include ./header
+
+    .page-content
+        .container-fluid
+            .row: .col-lg-12.text-right
+                h3.page-title الملف الشخصى 
+                .under-line
+
+        .container-fluid
+            ul(class="nav nav-pills" id="pills-tab" role="tablist")
+                each val, index in ['الملف الشخصى' , 'تغيير كلمه السر']
+                    li(class="nav-item"): a(
+                        class="nav-link"
+                        class=(index == 0 ? 'active' : '') 
+                        id="pills-"+ index +"-tab"
+                        data-toggle="pill" 
+                        href="#pills-" + index
+                        role="tab"
+                        aria-controls="pills-" + index 
+                        aria-selected=(index == 0)
+                        ) #{val}
+            
+            div(class="tab-content" id="pills-tabContent")
+                div(
+                    class="tab-pane fade show active" 
+                    id="pills-0"
+                    role="tabpanel" 
+                    aria-labelledby="pills-0-tab")
+                        .container-fluid: .row: .col-12.text-right 
+                            form 
+                                .form-group
+                                    label(for="name") اﻷسم
+                                    input(type="text" id="name" class="form-control")
+                                
+                                .form-group
+                                    label(for="email") البريد اﻷلكترونى
+                                    input(type="email" id="email" class="form-control")
+                                                               
+                                .form-group
+                                    label(for="image") صورة الملف الشخصي
+                                    .image-upload-icon#upload-btn: i.fas.fa-upload 
+                                    input(type="file" class="form-control d-none" id="image")
+                            
+                                .form-group: button.btn.btn-primary نعديل
+                    
+                div(class="tab-pane fade" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab")
+                    .container-fluid: .row: .col-12.text-right: form   
+                        .form-group
+                            label(for="password") الرقم السرى
+                            input(type="password" id="password" class="form-control")
+                            
+                        .form-group
+                            label(for="confirm_password") تأكيد الرقم السرى
+                            input(type="password" id="confirm_password" class="form-control")
+                        
+                        .form-group: button.btn.btn-primary نعديل
+
+                            
+                        
+
+                div(class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab")
+                    h1 Add New Item
+

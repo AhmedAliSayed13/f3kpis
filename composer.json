@@ -1,0 +1,6 @@
+{
+    "require": {
+        "bcosca/fatfree-core": "^3.7",
+        "anandpilania/f3-validator": "^1.2"
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "caption": "متوسط نسب الإنجاز الفعلي بالمناطق",
+  "subCaption": "الوحدة = متوسط",
+  "xAxisName": "المنطقة",
+  "yAxisName": "متوسط نسب الإنجاز الفعلي",
+  "formatnumberscale": "1",
+  "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+  "theme": "fusion",
+  "drawcrossline": "1"
+}

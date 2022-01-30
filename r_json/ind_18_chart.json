@@ -1,0 +1,13 @@
+{
+  "chart": {
+    "caption": "توزيع المشاريع على الإدارات التعليمية بالمناطق",
+    "subCaption": "الوحدة = نسبة مئوية %",
+    "xAxisName": "الادارة التعليمية",
+    "yAxisName": "عدد",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "head": ["المنطقة", "عدد المشاريع", "نسبة مشاريع البنات", "نسبة مشاريع البنين", "نسبة مشاريع الادارة التعليمية"]
+}

@@ -1,0 +1,70 @@
+.page-content {
+    background-color: #F3F6F9;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 25px 40px 0px;
+    h3.page-title {
+        font: var(--unnamed-font-style-normal) normal 900 42px/79px $primaryFontFamily;
+        font: normal normal 900 42px/79px $primaryFontFamily;
+        letter-spacing: 0px;
+        color: #272D3B;
+        opacity: 1;
+    }
+    .under-line {
+        top: 216px;
+        left: 1746px;
+        width: 127px;
+        height: 1px;
+        background: #000000 0% 0% no-repeat padding-box;
+        opacity: 1;
+        margin-bottom: 50px;
+    }
+}
+
+.modal-header {
+    background-color: $primaryColor;
+    border: none;
+}
+
+.modal-title {
+    font-weight: bold;
+    color: white;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    background-color: #EEF1F5;
+    border-radius: 12px;
+    opacity: 1;
+}
+
+button[type=submit] {
+    opacity: 1;
+    text-align: center;
+    background: #3699FF 0% 0% no-repeat padding-box;
+    // font: normal normal bold 32px/60px $primaryFontFamily;
+    letter-spacing: 0px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    border: none;
+    padding: 9px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.image-upload-icon {
+    background-color: $primaryColor;
+    color: white;
+    padding: 17px;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 1px #666;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    overflow-x: scroll;
+}

@@ -1,0 +1,13 @@
+{
+  "chart": {
+    "caption": "إنذارات المقاولين  للمشاريع تحت التنفيذ",
+    "subCaption": "الوحدة = انذار",
+    "xAxisName": "المقاول",
+    "yAxisName": "عدد الانذارات",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "head": ["عدد الانذارات", "عدد الانذارات النهائية", "عدد المشاريع"]
+}

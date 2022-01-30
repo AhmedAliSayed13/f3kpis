@@ -1,0 +1,47 @@
+{
+  "chart": {
+    "caption": "تقسيم المقاولين الي مجموعات باستخدام خوارزمية التجميع",
+    "subCaption": "الوحدة = مشروع",
+    "xAxisName": "المقاول",
+    "yAxisName": "عدد",
+    "formatnumberscale": "1",
+    "plottooltext": "<b>$dataValue<\/b> مدرسة لل <b>$seriesName<\/b> in $label",
+    "theme": "fusion",
+    "drawcrossline": "1"
+  },
+  "categories": [
+    {
+      "category": [
+        {
+          "label": "مؤسسة الغربى للتجارة والمقاولات"
+        }
+      ]
+    }
+  ],
+  "dataset": [
+    {
+      "seriesname": "عدد المشاريع",
+      "data": [
+        {
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "seriesname": "اجمالي تكلفة المشاريع (بالمليون ريال)",
+      "data": [
+        {
+          "value": "14.088"
+        }
+      ]
+    },
+    {
+      "seriesname": "المجموعة",
+      "data": [
+        {
+          "value": "المجموعة الدنيا"
+        }
+      ]
+    }
+  ]
+}

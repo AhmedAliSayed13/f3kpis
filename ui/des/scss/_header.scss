@@ -1,0 +1,96 @@
+header {
+    height: 115px;
+    background: #0C8575 0% 0% no-repeat padding-box;
+    .logo-box {
+        background-color: #fff;
+        text-align: center;
+        max-width: 233px;
+        height: 99px;
+        box-shadow: 0px 3px 6px #00000029;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        img {
+            height: 80px;
+            margin-top: 10px;
+            max-width: 220px;
+        }
+    }
+    #right-menu-button {
+        display: none;
+    }
+    #right-menu {
+        text-align: right;
+        margin-right: 51px;
+        transform: translate(0%, 50%);
+        .header-items {
+            margin-right: 0px;
+            margin-left: 26px;
+            padding: 15px 35px;
+            background: #259183 0% 0% no-repeat padding-box;
+            border-radius: 6px;
+            opacity: 1;
+            img {
+                margin-left: 10.44px;
+                height: 30px;
+                width: 30px;
+            }
+            span {
+                text-align: center;
+                font-size: 15px;
+                font-weight: bold;
+                letter-spacing: 0px;
+                font-family: $primaryFontFamily;
+                color: #FFFFFF;
+                opacity: 1;
+            }
+        }
+        #profile-icon {
+            margin-left: 26px;
+            cursor: pointer;
+            img {
+                max-height: 60.6px;
+            }
+        }
+    }
+    #profile-menu {
+        display: none;
+        z-index: 9999;
+        width: 231px;
+        height: 168px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 2px 10px #00000027;
+        opacity: 1;
+        position: absolute;
+        top: 105px;
+        right: 40px;
+        .arrow {
+            background: #fff;
+            height: 15px;
+            width: 15px;
+            position: absolute;
+            left: 50%;
+            top: -7.5px;
+            transform: rotate(45deg);
+        }
+        ul {
+            list-style: none;
+            padding-top: 13px;
+            padding-right: 25px;
+            text-align: right;
+            li {
+                margin: 11px 0px;
+                a {
+                    font: var(--unnamed-font-style-normal) normal bold 18px/33px $primaryFontFamily;
+                    text-align: center;
+                    font: normal normal bold 18px/33px Cairo;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
+                    img {
+                        margin-left: 17.5px;
+                    }
+                }
+            }
+        }
+    }
+}

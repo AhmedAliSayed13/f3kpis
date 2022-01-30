@@ -1,0 +1,482 @@
+@media (max-width: $lg) {
+    header {
+        #right-menu {
+            margin-right: -15px;
+            .header-items {
+                span {
+                    font-size: 14px!important;
+                }
+                img {
+                    margin-left: 5px;
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+        .list-inline-item:not(:last-child) {
+            margin: 5px;
+        }
+    }
+    .page-6 .info-card {
+        margin-bottom: 0;
+        min-height: 190px;
+        .card-content h3 {
+            font-size: medium;
+            line-height: 35px;
+        }
+    }
+    .login-page {
+        .right-side {
+            h3 {
+                font: normal normal bold 30px/75px "Cairo", sans-serif;
+                margin-bottom: 10px;
+            }
+            h4 {
+                font: normal normal bold 30px/72px "Cairo", sans-serif
+            }
+        }
+        .form-group input {
+            height: 55px;
+            button[type=submit] {
+                padding: 0px;
+                width: 300px;
+            }
+        }
+    }
+    .home-page {
+        .card {
+            .card-header {
+                ul {
+                    margin-right: -25px;
+                    .export-item,
+                    .select-date-title {
+                        margin-left: 0;
+                    }
+                    li {
+                        font: normal normal bold 20px/30px Cairo;
+                        &:first-of-type {
+                            margin-bottom: 25px;
+                        }
+                        input {
+                            width: 350px;
+                        }
+                    }
+                }
+            }
+            .card-body .statics .info-list li span {
+                font: normal normal bold 13px/30px Cairo;
+            }
+        }
+    }
+    .home-page #data-container #pills-tab {
+        margin: 0px 10px -1px;
+    }
+    .page-5 #pills-tab li a {
+        padding: 20px;
+        font: normal normal bold 18px/45px Cairo;
+    }
+    .page-5 #pills-tabContent>div {
+        margin: 0;
+        padding: 0;
+    }
+    .page-5 #pills-tabContent>div .card .card-body li a {
+        font-size: 15px;
+    }
+    .page-5 #pills-tabContent>div .card .card-body ul {
+        margin: 15px 0px;
+        padding-right: 0;
+    }
+    .page-5 #pills-tabContent>div .card .card-header h3 {
+        font-size: 19px!important;
+    }
+    .users-table {
+        table {
+            a.btn {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    #right-menu {
+        #profile-icon {
+            margin-left: 5px!important;
+            img {
+                max-height: 50px!important;
+            }
+        }
+        .header-items,
+        li {
+            margin: 0px!important;
+            span {
+                font-size: 15px!important;
+            }
+        }
+    }
+    .page-6 .info-card .card-content h3 {
+        font-size: large;
+    }
+    .page-6 .info-card {
+        margin-bottom: -60px;
+    }
+    .home-page .card .card-body .statics .info-list li span {
+        font: normal normal bold 15px/20px Cairo!important;
+    }
+    .home-page .card .card-body .statics .info-list {
+        padding: 50px 15px;
+    }
+    .home-page .card {
+        margin: 50px;
+    }
+    .home-page .card .card-header ul input {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .page-6 .info-card {
+        margin-bottom: 0px;
+    }
+    .login-page .right-side,
+    .forgot-password .right-side {
+        padding-right: 50px;
+        padding-left: 25px;
+    }
+    .welcome-page .content .card-info .card-content {
+        top: 55px;
+        right: 44.8px;
+        right: 25px;
+    }
+    #right-menu {
+        #profile-icon {
+            margin-left: 5px!important;
+            img {
+                max-height: 50px!important;
+            }
+        }
+        .header-items,
+        li {
+            margin: 0px!important;
+            span {
+                font-size: 15px!important;
+            }
+        }
+    }
+    .home-page .card {
+        margin: 0px 50px;
+    }
+    .home-page .card .card-header ul input {
+        width: 75%!important;
+    }
+    .home-page .card .card-body .statics .info-list ul {
+        padding-right: 0;
+    }
+}
+
+@media(max-width:$md) {
+    .table thead th,
+    .table td,
+    .table a.btn {
+        font-size: small!important;
+    }
+    header #right-menu .header-items {
+        margin: 9px 0px!important;
+    }
+    header #right-menu {
+        margin-right: 25px;
+        margin-top: 25px;
+    }
+    .page-5 #pills-tab li a {
+        padding: 20px;
+        font: normal normal bold 13px/45px Cairo;
+    }
+    .profile-page #pills-tab li a {
+        font: normal normal bold 15px/45px Cairo;
+    }
+    .profile-page #pills-tabContent>div {
+        padding: 50px 5px;
+    }
+    .home-page .card .card-body .statics .charts {
+        margin-bottom: 15px;
+    }
+    .page-5 #pills-tabContent>div {
+        margin: 0;
+        padding: 0;
+    }
+    .page-5 #pills-tabContent>div .card .card-body li a {
+        font-size: 15px;
+    }
+    .page-5 #pills-tabContent>div .card .card-body ul {
+        margin: 15px 0px;
+        padding-right: 0;
+    }
+    #right-menu {
+        display: none;
+        position: relative;
+        bottom: 60px;
+        left: 30px;
+        z-index: 9;
+        max-width: 410px;
+    }
+    #right-menu-button {
+        display: block!important;
+        position: absolute;
+        top: 60px;
+        cursor: pointer;
+        right: 5%;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 25px;
+        z-index: 9999999999999999;
+        transform: translate(-50%, -50%);
+    }
+    .list-inline-item {
+        &:first-of-type {
+            margin-bottom: 9px;
+        }
+    }
+    .header-items {
+        display: block;
+        margin-bottom: 15px!important;
+        span {
+            font-size: 15px;
+        }
+    }
+    #profile-menu {
+        top: 85px!important;
+        right: 150px!important;
+        z-index: 999999999999999999999;
+        .arrow {
+            right: -7px;
+            top: 10px!important;
+        }
+    }
+    .page-6 .info-card {
+        min-height: 170px;
+        margin-bottom: 30px;
+    }
+    .welcome-page .content .card-info .card-content {
+        right: 15px;
+    }
+    .page-6 .info-card {
+        margin-bottom: 35px !important
+    }
+}
+
+@media (max-width: $sm) {
+    header #right-menu .header-items {
+        margin: 9px 0px!important;
+    }
+    header #right-menu {
+        margin-right: -20px;
+        margin-top: -5px;
+    }
+    #right-menu-button {
+        display: block !important;
+        position: relative;
+        top: 20px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 25px;
+        z-index: 10000000000000000;
+        transform: translate(10px, 10px);
+    }
+    .page-content {
+        padding: 10px;
+    }
+    .home-page #data-container {
+        margin: 0;
+    }
+    header {
+        #right-menu-button:focus {
+            outline: 0;
+        }
+        .logo-box {
+            width: 100%;
+        }
+        #right-menu {
+            position: absolute;
+            top: 85%;
+            right: 0;
+            z-index: 999999999;
+            width: 100vw;
+        }
+        #profile-menu {
+            right: 80px !important;
+            z-index: 99999999999999999999;
+        }
+    }
+    .login-page,
+    .forgot-password {
+        .right-side {
+            padding: 0px 45px;
+            h3 {
+                font: normal normal bold 25px/60px "Cairo", sans-serif;
+            }
+            h4 {
+                font: normal normal bold 25px/45px "Cairo", sans-serif;
+                margin-bottom: 15px;
+            }
+            .form-group {
+                margin-bottom: 15px;
+                button[type=submit] {
+                    margin-top: 15px;
+                    font: normal normal bold 20px/40px "Cairo", sans-serif;
+                }
+                input {
+                    height: 60px;
+                }
+            }
+        }
+        .logo-box {
+            width: 90% !important;
+        }
+        button[type=submit] {
+            width: 100%!important;
+        }
+    }
+    nav.page-header {
+        .hr {
+            margin-top: 25px;
+        }
+    }
+    .home-page {
+        h4.page-title {
+            font: normal normal 600 25px/35px Cairo;
+        }
+        #owl-carousel-container {
+            position: static;
+            .navigation-button {
+                display: none;
+            }
+        }
+    }
+    .page-6 {
+        .page-content .under-line {
+            margin-bottom: 35px;
+        }
+        .info-card {
+            margin-bottom: 0;
+            min-height: 200px;
+        }
+    }
+    h3.page-title {
+        font-size: x-large!important;
+        line-height: normal!important;
+        font-weight: 900!important;
+    }
+    #owl-carousel-container {
+        position: static;
+        margin: 0!important;
+    }
+    .home-page #owl-carousel-container .info-card .info-content h5 {
+        font-size: medium!important;
+        max-height: none;
+    }
+    .home-page #owl-carousel-container .info-card .info-content img {
+        right: 15%;
+    }
+    .home-page #data-container #pills-tab {
+        margin: 0;
+    }
+    .home-page .nav-pills .nav-item a {
+        font-size: medium;
+    }
+    .home-page .nav-pills .nav-item {
+        margin-bottom: 6px;
+        width: 100%;
+        text-align: center;
+        margin-right: -25px;
+    }
+    .home-page .card {
+        margin: 10px 10px 15px 20px;
+    }
+    .home-page .card .card-header ul .export-item {
+        padding: 3px 10px 8px 20px;
+    }
+    .home-page .card .card-header ul input {
+        width: 90%!important;
+    }
+    .home-page .card .card-header ul .select-date-title {
+        margin: 30px 0px 20px;
+    }
+    .home-page .card .card-body {
+        padding: 15px 0px;
+    }
+    .home-page .card .card-body .statics .charts {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .home-page .card .card-body .statics .info-list {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px 0px 0px;
+        border-radius: 0;
+    }
+    .home-page .card .card-body .statics .info-list li .icon {
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    .home-page .card .card-body .results-box {
+        margin: 5px 0px 5px 15px;
+    }
+    .page-5 #pills-tab>li {
+        margin-bottom: 9px;
+        width: 100%!important;
+        text-align: center;
+        a {
+            padding: 10px 20px 0px;
+            font-size: medium;
+        }
+    }
+    .page-5 #pills-tabContent>div {
+        padding: 0;
+        margin: 0px 0px 50px 10px;
+    }
+    .page-5 #pills-tabContent>div .card .card-header h3 {
+        font: normal normal bold 16px/35px Cairo;
+    }
+    .page-5 #pills-tabContent>div .card {
+        margin: 15px 0px;
+    }
+    .page-5 #pills-tabContent>div .card .card-body ul {
+        margin: 0;
+        padding: 5px!important;
+    }
+    .page-5 #pills-tabContent>div .card .card-body li a {
+        font-size: large;
+    }
+    .welcome-page .content .cards-container {
+        right: 50px;
+    }
+    .profile-page #pills-tab li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 6px;
+        &:last-of-type {
+            margin-bottom: 1px;
+        }
+        a {
+            padding: 15px;
+            font-size: 14px;
+        }
+    }
+    .profile-page #pills-tabContent>div {
+        padding: 50px 0px;
+        width: 100%;
+    }
+    .profile-page label {
+        font-size: 16px;
+    }
+    .profile-page input {
+        height: 50px;
+    }
+    .profile-page button {
+        width: 100%;
+    }
+}
